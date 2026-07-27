@@ -221,7 +221,7 @@ if (window.lucide) {
 
   const audio = document.createElement('audio');
   audio.id = 'bg-music';
-  audio.src = 'music.mp3';
+  audio.src = 'hindu.mp3';
   audio.loop = true;
   document.body.appendChild(audio);
 
@@ -363,8 +363,8 @@ console.log('💍 Athira & Vinay Reception Website Loaded');
 // ─── RSVP FORM ───────────────────────────────────────────────
 (function initRSVP() {
   // ── Replace PASTE_YOUR_SCRIPT_ID_HERE with your deployment ID ──
-  const SCRIPT_URL  = 'https://script.google.com/macros/s/AKfycbx95lvTL8SbHcMLVsXd-lzCVOKnrAnJqn4ieCAC96HbtDtDGsL3ir8t8ltNXm_gl1oW/exec';
-  const STORAGE_KEY = 'vinay_athira_rsvp';
+  const SCRIPT_URL  = 'https://script.google.com/macros/s/AKfycbzKhE5qZzlExCRzch_W3ysqqxfnLcJDK6_boVBSIyzIutKmzEUqfhbZyC92Xi5AIuv2dw/exec';
+  const STORAGE_KEY = 'athira_vinay_rsvp';
 
   const rsvpForm    = document.getElementById('rsvp-form');
   const rsvpSuccess = document.getElementById('rsvp-success');
@@ -426,15 +426,14 @@ console.log('💍 Athira & Vinay Reception Website Loaded');
     if (submitBtn) { submitBtn.innerText = 'Submitting…'; submitBtn.disabled = true; }
 
     // Payload columns match the Apps Script header row:
-    // Timestamp | Name | Mobile | Attendance | Guests | Message
+    // Full Name | Mobile Number | Attendance Status | Number of Guests | Message for the Couple
     const payload = {
       sheetName:  'Sheet1',
       name,
       mobile,
       attendance,
       guests,
-      message,
-      timestamp:  new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+      message
     };
 
     try {
@@ -494,7 +493,7 @@ console.log('💍 Athira & Vinay Reception Website Loaded');
     if (data.attendance.toLowerCase().includes('yes')) {
       para.innerHTML = `
         Your RSVP has been received!<br>
-        <strong>Attending:</strong> Yes, InshaAllah
+        <strong>Attending:</strong> Yes, I will be there
         ${data.guests > 0 ? '&nbsp;(' + data.guests + ' guest' + (data.guests > 1 ? 's' : '') + ')' : ''}<br>
         We look forward to welcoming you on the big day! 🎉
       `;
