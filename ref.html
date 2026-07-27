@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Nabeel & Farhana — Wedding Invitation</title>
+<meta name="description" content="You are warmly invited to the wedding of Muhammed Nabeel AS & Farhana N, 15th August 2026, K.T.C.T Auditorium, Kaduvayil, Thottakadu." />
+
+<!-- Open Graph / WhatsApp & social sharing preview -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Muhammed Nabeel & Farhana — Wedding Invitation" />
+<meta property="og:description" content="You are warmly invited to the wedding of Muhammed Nabeel AS & Farhana N, 15th August 2026, K.T.C.T Auditorium, Kaduvayil, Thottakadu." />
+<meta property="og:image" content="assets/images/og-share.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Muhammed Nabeel & Farhana — Wedding Invitation" />
+<meta name="twitter:description" content="You are warmly invited to the wedding of Muhammed Nabeel AS & Farhana N, 15th August 2026, K.T.C.T Auditorium, Kaduvayil, Thottakadu." />
+<meta name="twitter:image" content="assets/images/og-share.jpg" />
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Cinzel:wght@500;600&family=Jost:wght@300;400;500;600&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS (scroll animations) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================== PRELOADER ===================== -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <svg viewBox="0 0 100 100" class="preloader-ring">
+      <circle cx="50" cy="50" r="42"></circle>
+    </svg>
+    <span class="preloader-initials" id="preloaderInitials">N&nbsp;&amp;&nbsp;F</span>
+  </div>
+</div>
+
+<!-- ===================== AMBIENT DECOR (fixed) ===================== -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- ===================== MUSIC TOGGLE ===================== -->
+<button id="musicToggle" class="music-toggle" aria-label="Toggle background music" hidden>
+  <i class="fa-solid fa-music"></i>
+</button>
+<audio id="bgMusic" loop preload="none">
+  <source src="assets/music/music.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- ===================== NAV DOTS ===================== -->
+<nav class="side-nav" aria-label="Section navigation">
+  <a href="#hero" class="side-nav__dot" data-label="Welcome" aria-current="true"></a>
+  <a href="#date" class="side-nav__dot" data-label="Save the Date"></a>
+  <a href="#details" class="side-nav__dot" data-label="Details"></a>
+</nav>
+
+<!-- ===================== SECTION 1 — HERO / REVEAL ===================== -->
+<section id="hero" class="hero">
+  <div class="hero__backdrop">
+    <img src="assets/images/hero-bg-detail.jpg" alt="" class="hero__bg-photo" />
+    <div class="hero__gradient"></div>
+  </div>
+
+  <div class="hero__cover" id="heroCover" aria-hidden="true"></div>
+
+  <div class="hero__floaters" aria-hidden="true">
+    <span class="floater floater--1">✦</span>
+    <span class="floater floater--2">✦</span>
+    <span class="floater floater--3">✦</span>
+  </div>
+
+  <div class="hero__stage" id="heroStage">
+
+    <!-- The Nikah Arch — signature reveal -->
+    <div class="arch-frame" id="archFrame">
+      <svg class="arch-leaf arch-leaf--left" id="archLeft" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M220,420 L220,120 C220,55 175,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C165,32 200,68 200,122 L200,400" />
+      </svg>
+      <svg class="arch-leaf arch-leaf--right" id="archRight" viewBox="0 0 220 420" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,420 L0,120 C0,55 45,10 110,0 L110,420 Z" />
+        <path class="arch-leaf__inline" d="M110,20 C55,32 20,68 20,122 L20,400" />
+      </svg>
+
+      <!-- jasmine garland along the top of the arch -->
+      <svg class="garland" viewBox="0 0 440 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="garland__string" d="M10,10 Q220,70 430,10" />
+        <g class="garland__buds">
+          <circle cx="40" cy="24" r="5"></circle>
+          <circle cx="80" cy="35" r="6"></circle>
+          <circle cx="120" cy="43" r="5"></circle>
+          <circle cx="160" cy="48" r="6"></circle>
+          <circle cx="200" cy="51" r="5"></circle>
+          <circle cx="240" cy="51" r="5"></circle>
+          <circle cx="280" cy="48" r="6"></circle>
+          <circle cx="320" cy="43" r="5"></circle>
+          <circle cx="360" cy="35" r="6"></circle>
+          <circle cx="400" cy="24" r="5"></circle>
+        </g>
+      </svg>
+
+      <button type="button" class="arch-cta" id="archCta">
+        <span class="arch-cta__ring"></span>
+        <span class="arch-cta__label">Open the Invitation</span>
+      </button>
+
+      <!-- ring particle burst, populated by script.js when the arch opens -->
+      <div class="ring-particles" id="ringParticles" aria-hidden="true"></div>
+    </div>
+
+    <!-- Revealed content -->
+    <div class="hero__reveal" id="heroReveal">
+      <p class="eyebrow reveal-item" data-reveal="1">Bismillāhir Raḥmānir Raḥīm</p>
+      <p class="hero__names reveal-item" data-reveal="2">
+        <span class="hero__name">Muhammed Nabeel</span>
+        <span class="hero__amp">&amp;</span>
+        <span class="hero__name">Farhana</span>
+      </p>
+      <p class="script-line reveal-item" data-reveal="3">are getting married</p>
+      <div class="hero__date reveal-item" data-reveal="4">
+        <span>15</span><em>·</em><span>08</span><em>·</em><span>2026</span>
+      </div>
+      <p class="hero__venue-line reveal-item" data-reveal="5">K.T.C.T Auditorium &nbsp;·&nbsp; Kaduvayil, Thottakadu</p>
+    </div>
+  </div>
+
+  <a href="#date" class="scroll-cue" aria-label="Scroll to next section">
+    <span class="scroll-cue__stem"></span>
+    <span class="scroll-cue__text">Scroll</span>
+  </a>
+</section>
+
+<!-- ===================== SECTION 2 — SAVE THE DATE ===================== -->
+<section id="date" class="date-section">
+  <svg class="corner-flourish corner-flourish--tl" viewBox="0 0 160 160" aria-hidden="true"><use href="#flourish-path"></use></svg>
+  <svg class="corner-flourish corner-flourish--br" viewBox="0 0 160 160" aria-hidden="true"><use href="#flourish-path"></use></svg>
+
+  <p class="eyebrow" data-aos="fade-up">Save the Date</p>
+  <h2 class="date-section__title" data-aos="fade-up" data-aos-delay="80">
+    Saturday, the 15th of August<br /><span>Two Thousand &amp; Twenty-Six</span>
+  </h2>
+
+  <div class="countdown" id="countdown" data-aos="fade-up" data-aos-delay="160">
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-days">00</span>
+      <span class="countdown__label">Days</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-hours">00</span>
+      <span class="countdown__label">Hours</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-mins">00</span>
+      <span class="countdown__label">Minutes</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__num" id="cd-secs">00</span>
+      <span class="countdown__label">Seconds</span>
+    </div>
+  </div>
+
+  <p class="date-section__note" data-aos="fade-up" data-aos-delay="220">We can't wait to celebrate this new beginning with you</p>
+</section>
+
+<!-- ===================== SECTION 3 — WEDDING DETAILS ===================== -->
+<section id="details" class="details-section">
+  <p class="eyebrow eyebrow--dark" data-aos="fade-up">Wedding Details</p>
+  <h2 class="details-section__title" data-aos="fade-up" data-aos-delay="80">With Love &amp; Blessings</h2>
+
+  <div class="detail-card" data-aos="zoom-in" data-aos-delay="120">
+    <svg class="detail-card__corner detail-card__corner--tl" viewBox="0 0 90 90" aria-hidden="true"><use href="#paisley-path"></use></svg>
+    <svg class="detail-card__corner detail-card__corner--tr" viewBox="0 0 90 90" aria-hidden="true"><use href="#paisley-path"></use></svg>
+    <svg class="detail-card__corner detail-card__corner--bl" viewBox="0 0 90 90" aria-hidden="true"><use href="#paisley-path"></use></svg>
+    <svg class="detail-card__corner detail-card__corner--br" viewBox="0 0 90 90" aria-hidden="true"><use href="#paisley-path"></use></svg>
+
+    <p class="detail-card__bismillah">In the name of Allah, the Most Gracious, the Most Merciful</p>
+
+    <div class="couple-row">
+      <div class="couple-row__person">
+        <div class="couple-row__photo"><img src="assets/images/groom.jpg" alt="Muhammed Nabeel AS" loading="lazy" /></div>
+        <h3>Muhammed Nabeel <span>AS</span></h3>
+        <p class="couple-row__parents">Son of Mr. Abdul Aleem &amp; Mrs. Seenamol<br />Marancode, Thottakadu P.O, Kallambalam</p>
+        <p class="couple-row__siblings">Sibling of Amina &amp; Jesil</p>
+      </div>
+      <div class="couple-row__amp">&amp;</div>
+      <div class="couple-row__person">
+        <div class="couple-row__photo"><img src="assets/images/bride.jpg" alt="Farhana N" loading="lazy" /></div>
+        <h3>Farhana <span>N</span></h3>
+        <p class="couple-row__parents">Daughter of Mr. Nazar A (Late) &amp; Zeenath Beevi<br />Firdous, Erattakalingu, Chirayinkeezhu P.O</p>
+      </div>
+    </div>
+
+    <div class="detail-card__divider"><span></span><i class="fa-solid fa-gem"></i><span></span></div>
+
+    <div class="detail-grid">
+      <div class="detail-grid__item">
+        <i class="fa-regular fa-calendar"></i>
+        <h4>Date</h4>
+        <p>Saturday, 15th August 2026</p>
+      </div>
+      <div class="detail-grid__item">
+        <i class="fa-regular fa-clock"></i>
+        <h4>Time</h4>
+        <p>12:00 PM onwards</p>
+      </div>
+      <div class="detail-grid__item">
+        <i class="fa-solid fa-building-columns"></i>
+        <h4>Venue</h4>
+        <p>K.T.C.T Auditorium</p>
+      </div>
+      <div class="detail-grid__item">
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>Address</h4>
+        <p>Kaduvayil, Thottakadu</p>
+      </div>
+    </div>
+
+    <div class="venue-map" data-aos="fade-up" data-aos-delay="60">
+      <iframe
+        id="venueMapEmbed"
+        title="Map to K.T.C.T Auditorium, Kaduvayil, Thottakadu"
+        src="https://www.google.com/maps?q=K.T.C.T%20Auditorium%2C%20Kaduvayil%2C%20Thottakadu&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <a class="btn btn--gold" id="mapsBtn" href="#" target="_blank" rel="noopener">
+      <i class="fa-solid fa-map-location-dot"></i> Get Directions
+    </a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="site-footer__mark">N <span>&amp;</span> F</div>
+  <p>15 · 08 · 2026</p>
+  <p class="site-footer__note">With gratitude for your presence in our story</p>
+</footer>
+
+<!-- Hidden SVG symbol defs used across the page -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="flourish-path" d="M4,140 C4,80 10,40 40,20 C65,4 100,2 140,4 M40,20 C30,45 30,80 45,110 M60,35 C52,55 52,80 63,100" />
+    <path id="paisley-path" d="M10,80 C10,40 35,12 70,10 C60,25 55,42 62,58 C68,42 82,32 80,10 C82,35 78,55 62,58 C48,60 30,55 20,40 C25,58 40,70 62,72" />
+  </defs>
+</svg>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
