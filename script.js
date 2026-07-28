@@ -221,7 +221,7 @@ if (window.lucide) {
 
   const audio = document.createElement('audio');
   audio.id = 'bg-music';
-  audio.src = 'hindu.mp3';
+  audio.src = 'song.mp3';
   audio.loop = true;
   document.body.appendChild(audio);
 
